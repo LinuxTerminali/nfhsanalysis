@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>NFHS Analysis</title>
+<!--  Styles  -->
+    <style type="text/css">
+        svg {
+            background: #fffff;
+        }
+        #india {
+            fill: steelblue;
+            opacity: .8;
+            stroke: #000000;
+            stroke-width: .7;
+        }
+        div.tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 0.5em;
+            font-size: 20px;
+            color: #ff9999;
+            background: #FFF;
+            border-radius: 2px;
+            pointer-events: none;
+            box-shadow: 0px 0px 2px 0px #a6a6a6;
+            text-shadow: #f5f5f5 0 1px 0;
+        }
+        .container {
+            margin: auto;
+            width: 80%;
+            padding: 10px;
+        }
+        .para {
+            font-family: 'Roboto', sans-serif;
+            text-align: justify;
+            text-justify: inter-word;
+            font-size: 20px;
+            line-height: 150%;
+        }
+
+        .ulist {
+            font-family: 'Roboto', sans-serif;
+            text-align: justify;
+            text-justify: inter-word;
+            font-size: 18px;
+            line-height: 150%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; font-family: 'Roboto', sans-serif;">Indian fertility rate is declining, but still, there is a lot of room for improvement.</h1>
+
+<h6 style="text-align: center; font-family: 'Roboto', sans-serif;">Based on <a href="https://github.com/HindustanTimesLabs/nfhs-data">National Health Survey 2015-16</a></h6>
+<h6 style="text-align: center; font-family: 'Roboto', sans-serif;">By <a href="https://github.com/LinuxTerminali">LinuxTerminal</a></h6>
+    <div class="container">
+                <h4 style="text-align: left; font-family: 'Roboto', sans-serif;">Key Points</h4>
+
+<ul class ="ulist">
+  <li >Usage of Condom for Family planning is more popular in North Indian states.</li>
+  <li>Female Sterilization is more popular in South Indian states.</li>
+  <li>West Bengals Murshidabad district has the highest number of teenage pregnancy.</li>
+  <li>West Bengals Murshidabad district is the costliest district in India for delivery in public hospital.</li>
+</ul> 
+
+        <div width="480" height="600" id="graph-0"></div>
+
+        <p class="para">In 1952, India was the first country to start family planning program in the world despite that; India remained the major contributor to the world population growth in 60's and 70's. Then again in 1976, the Indian government much-criticized program of compulsory sterilization was another attempt to curb the booming Indian population. At that time India's average fertility rate was hovering around 5-6. Nevertheless, forced sterilization program was not only failed to make a significant change but also responsible for many death at that time. 
+Fast forward to early 21st-century Indian population was still thriving, but first-time in National Family Health Survey(NFHS) 2005-06 average fertility rate fell below 3. Furthermore, then NHFS-4 2015-16 saw another decline in average fertility rate where  India reached inch closer to the sub-replacement fertility rate of 2.1 with an average fertility rate of 2.2. 
+
+        </p>
+
+
+        <p class="para">
+ This drop in fertility rate is seen directly proportional to the improvement of women educational status. Where literacy of women in a state Uttar Pradesh when increased from 44.9% in 2005-06 to 61% in 2015-16 average fertility rate dropped from 3.8 to 2.7. Another primary example of Kerala and goa with an average fertility rate of less than 2  have high women literacy of 97% and 93% respectively.
+            <br> Despite the decrease in average fertility rate, there is much room for improvement in this area. Where some Indian states like Sikkim, Punjab, Delhi, and Goa have average fertility rate well below 2; then there are states like Bihar and Meghalaya with average fertility rate hovering over 3. Awareness about the family planning and teenage pregnancy is another big concern. </p>
+            <h2 style="text-align: left; font-family: 'Roboto', sans-serif;">Family planning methods</h2>
+        <div width="480" height="600" id="graph-1"></div>
+
+
+        <P class="para">A look at family planning methods provides some interesting facts.  Where female sterilization stands at 24.9% in NHFS-4 and sees the growth of 0.6% from NHFS-3, male sterilization fell below 1% on the national level, and use of condoms also decline by 0.35% from the last survey.  
+            <br>NHFS Data shows that tradition of Condom in North Indian states like Uttar Pradesh and Punjab is much higher than the south Indian states where Female sterilization is preferred way. Most of the districts in top 50 where female sterilization is high belonged to south Indian states. Where Andhra Pradesh alone has thirteen districts, Maharashtra and Karnataka have  10, and 6 respectively. 
+            <br> Furthermore, most of the district in top 50 where Condom usage is on the higher side are the North Indian state where Uttar Pradesh and Punjab combined have more than 30 districts in it. Looking at the broader scale, Rajasthan tops the chart, but it is more likely due to having only few district with high percentage compared to other states like Uttar Pradesh and Punjab. 
+            <br> Use of Pill for the family planning stands at 3.73% on national average, and it is majorly used in Northeastern states. Where Assam and West Bengal alone have  35 districts combined in top 50 districts with high Pill usage.
+            <br> Male sterilization is seen as losing prevalence over the year against other family planning methods. Moreover, its drop below 1% is lowest in the independent India. Himachal Pradesh and Sikkim are the only two state with more than 2% male sterilization. Bihar, Goa, Meghalaya, and Nagaland are some of the states with 0% male sterilization. If we again see things on the district level, Himachal Pradesh has 4 districts in top 10 with more then 10% male sterilization other then that Maharashtra has 3 districts with more then 5% Male sterilization.</P>
+
+
+        <table style="width:100%">
+            <tr>
+                <th>
+                    <h4 class="discription" align="center" style="text-align: center; font-family: 'Roboto', sans-serif;">Usage of condom for family planning</h4>
+                </th>
+                <th colspan="2">
+                    <h4 class="discription" align="center" style="text-align: center; font-family: 'Roboto', sans-serif;">Female sterlization for family planning</h4>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <svg class="condo" width="480" height="600"></svg>
+                </td>
+                <td>
+                    <svg class="feferti" width="480" height="600"></svg>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+<h2 style="text-align: left; font-family: 'Roboto', sans-serif;">Teenage Pregnancy</h2>
+        <p class="para">A recent ruling of supreme court declared sex with the wife below 18 is rape, and the NHFS-4 data also shows teenage pregnancy as the big concern. In the NHFS-4 national average of women age, 15-19 years who were already mothers or pregnant at the time of the
+survey stands at 7.9% although it is a significant drop from 16.0% in 2005-06. Data shows that the despite the fact that West Bengal has high woman literacy rate and low fertility rate most of the district where teenagers are found pregnant is from West Bengal. Where West Bengal has 13, and it's neighbor Assam have 9 districts in top 50 districts with high teenage pregnancy. Although Meghalaya and Maharashtra have a higher percentage of teenage pregnancy among other states if we see things at a broader level. A  critical point to note here is Assam, and West Bengal also has high pill usage percentage for family planning. An essential data in this teenage pregnancy shows that lower literacy rate is one of the reasons behind teenage pregnancy. Where Maharashtra's Jalna district has 21.5% teenage pregnancy stands at 65.7% in female literacy, i.e., lower than the Maharashtra's average female literacy rate of 85.9% also West Bengal's Murshidabad is the district with highest teenage pregnancy of 29.5% has 66.1% female literacy rate which lower than the state average of 71.16%. </p>
+
+        <table style="width:100%">
+            <tr>
+                <th>
+                    <h4 class="discription">Women age 15-19 years who were already mothers or pregnant at the time of the survey (%)</h4>
+                </th>
+                <th colspan="2">
+                    <h4 class="discription">Average out of pocket expenditure per delivery in public health facility (Rs.)</h4>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <svg class="preg" width="480" height="600"></svg>
+                </td>
+                <td>
+                    <svg class="money" width="480" height="600"></svg>
+                </td>
+            </tr>
+        </table>
+
+
+        <p class="para">Another surprising data shows that Murshidabad district from West Bengal does not only tops the chart with high teenage pregnancy, it is also one of the costliest districts for delivery in public health facility with ₹31,481 followed by West district of Delhi and again Jalna district of Maharashtra with ₹27,361 and ₹24,142 respectively.Bihar with the average fertility rate of 3.4 has ₹1,718 average expenditure cost for the delivery in public health, i.e., much lower than the average national cost ₹3,198. While Madhya Pradesh is the cheapest state with the ₹1746, Chattisgarh's Narayanpur is the cheapest district with just ₹295 as the cost of delivery of a child in a public health facility.</p>
+
+
+
+
+        <h4 class="discription" align="center">Health worker ever talked to female non-users about family planning (%)  </h4>
+
+        <svg class="qualityplanning" width="480" height="600" style="margin-left:auto; margin-right:auto; display:block;"></svg>
+        <p class="para">
+            Every Indian state has its government program for family planning awareness. However, the government push for awareness program mostly stays in files. Where NHFS-4 data shows that the cases where health worker talked to a female family member about the family planning stand at just 17.7% on the national level. As in the case of a teenage pregnancy where Murshidabad tops the chart and stands at mere 6.9% in this case, much lower than the state average of 18.5%. 
+
+            <br> While states with lowest fertility rate like Goa and Punjab have a higher percentage state with higher fertility rate like Bihar and Nagaland,  have a lower percentage than the national level. This performance is clear indicator that along with female literacy government push is also necessary for more improvement in fertility rate. </p>
+    </div>
+</body>
+
+
+<footer>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    
+    <script>
+        <!-- script to remove confict between d3js version of plotly and used for map display -->
+        d3version3 = d3
+        window.d3 = null
+
+        //console.log('v3', d3version3.version)
+    </script>
+
+    <script src="https://d3js.org/topojson.v1.js"></script>
+    <script src="https://d3js.org/queue.v1.min.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <!-- D3.js for plotly -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Plotly.js -->
+    <script src="https://d14fo0winaifog.cloudfront.net/plotly-basic.js"></script>
+
+    <script type="text/javascript">
+        var graph = {{graphJSON | safe}}
+        var layout = {
+            barmode: "stack"
+        };
+        Plotly.plot("graph-0", graph.data, graph.layout, function(err, msg) {
+            console.log(msg)
+        });
+    </script>
+    <script type="text/javascript">
+        var graph = {{groupgr | safe}}
+        var layout = {
+            barmode: "pie"
+        };
+        //console.log(graph.data)
+        Plotly.plot("graph-1", graph.data, graph.layout, function(err, msg) {
+            console.log(msg)
+        });
+    </script>
+    <script type="text/javascript">
+    </script>
+    <script type="text/javascript" src="/static/js/condo.js"></script>
+    <script type="text/javascript" src="/static/js/feferti.js"></script>
+    <script type="text/javascript" src="/static/js/preg.js"></script>
+    <script type="text/javascript" src="/static/js/qualityplanning.js"></script>
+     <script type="text/javascript" src="/static/js/money.js"></script>
+
+</footer>
+
+</html>
